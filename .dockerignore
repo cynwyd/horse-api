@@ -1,0 +1,14 @@
+.git
+.gitignore
+.gitmodules
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+.env
+.venv
+venv/
+env/
+DOCKER.md
