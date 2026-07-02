@@ -1,0 +1,17 @@
+.git
+.gitmodules
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.env
+.DS_Store
+Dockerfile
+.dockerignore
+DOCKER.md
