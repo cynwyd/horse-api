@@ -1,0 +1,39 @@
+# Git metadata
+.git
+.gitmodules
+.gitignore
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files (not needed in build context)
+Dockerfile
+.dockerignore
+
+# Documentation
+*.md
+DOCKER.md
