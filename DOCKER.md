@@ -1,0 +1,72 @@
+# Docker Instructions — horse-api-lr75v
+
+## Overview
+
+A FastAPI-based HTTP API service running on Python 3 with Uvicorn as the ASGI server.
+
+| Property | Value |
+|---|---|
+| **Service Name** | `horse-api-lr75v` |
+| **Language** | Python 3 |
+| **Framework** | FastAPI |
+| **ASGI Server** | Uvicorn |
+| **Port** | `8000` |
+| **Health Check** | `GET /` → HTTP 200 |
+
+---
+
+## Build
+
+From the root of the extracted source directory:
+
+```bash
+docker build -t horse-api-lr75v .
+```
+
+---
+
+## Run
+
+```bash
+docker run -p 8000:8000 horse-api-lr75v
+```
+
+The API will be available at: [http://localhost:8000](http://localhost:8000)
+
+---
+
+## Health Check
+
+```bash
+curl http://localhost:8000/
+```
+
+Expected response:
+```json
+{"status": "healthy", "message": "Hello from inside the container!"}
+```
+
+---
+
+## VERSION File
+
+A `VERSION` file is included at `/app/VERSION` inside the container, containing the UTC timestamp of when the image was built.
+
+To inspect it:
+```bash
+docker run --rm horse-api-lr75v cat /app/VERSION
+```
+
+---
+
+## Environment Variables
+
+No environment variables are currently required to start the application.
+
+---
+
+## Secret Handling
+
+For production deployments, manage secrets using:
+- **ECS:** [AWS Secrets Manager integration with ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-envvar-secrets-manager.html)
+- **EKS:** [AWS Secrets Manager or KMS encryption for EKS](https://docs.aws.amazon.com/eks/latest/userguide/security-k8s.html)
