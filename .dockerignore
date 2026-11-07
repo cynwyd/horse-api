@@ -1,0 +1,32 @@
+# Git
+.git
+.gitignore
+.gitmodules
+
+# Docker
+Dockerfile
+.dockerignore
+DOCKER.md
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.tox/
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
