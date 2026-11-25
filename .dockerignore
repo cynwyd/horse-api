@@ -1,0 +1,44 @@
+# Git metadata
+.git
+.gitmodules
+.gitignore
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment files
+.env
+.env.*
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+tests/
+test/
+*.test.py
+pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation
+*.md
+DOCKER.md
